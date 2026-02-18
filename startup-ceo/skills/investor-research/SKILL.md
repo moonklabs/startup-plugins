@@ -5,7 +5,7 @@ description: VC 펀드/파트너를 조사하여 thesis 매칭, 포트폴리오 
 
 # 투자자 리서치 (Investor Research)
 
-아웃리치 전에 모든 VC 펀드 또는 파트너에 대한 완전한 그림을 제공합니다. 이 스킬은 웹 검색만으로도 항상 작동하며, 데이터 보강(Crunchbase, PitchBook, Dealroom)이 추가되면 크게 향상됩니다.
+아웃리치 전에 모든 VC 펀드 또는 파트너에 대한 완전한 그림을 제공합니다. 이 스킬은 웹 검색만으로도 항상 작동하며, 데이터 보강(THE VC, 혁신의숲, OpenDART)이 추가되면 크게 향상됩니다.
 
 ## 작동 방식
 
@@ -47,7 +47,7 @@ description: VC 펀드/파트너를 조사하여 thesis 매칭, 포트폴리오 
 
 | 커넥터 | 추가 기능 |
 |--------|----------|
-| **데이터 보강** | Crunchbase, PitchBook, Dealroom — 정확한 펀드 규모, 전체 포트폴리오, 투자 이력, LP 구성 |
+| **데이터 보강** | THE VC (투자 라운드·포트폴리오), 혁신의숲 (성장 지표), OpenDART (상장사 공시) — 웹 검색 기반 접근, OpenDART는 MCP 연결 가능 |
 | **CRM** | 기존 투자자 네트워크에서 인트로 경로 자동 발견 |
 | **지식 베이스** | Notion, Google Drive — 팀의 커넥션, 과거 인트로 이력 검색 |
 
@@ -61,7 +61,7 @@ description: VC 펀드/파트너를 조사하여 thesis 매칭, 포트폴리오 
 # 투자자 리서치: [VC 펀드명]
 
 **생성일:** [날짜]
-**소스:** 웹 검색 [+ Crunchbase] [+ PitchBook] [+ CRM]
+**소스:** 웹 검색 [+ THE VC] [+ 혁신의숲] [+ CRM]
 
 ---
 
@@ -307,8 +307,8 @@ LinkedIn 2촌: [X명]
 ## 출처
 
 - [VC 웹사이트](URL)
-- [Crunchbase: [펀드명]](URL)
-- [PitchBook: [펀드명]](URL)
+- [THE VC: [펀드명]](URL)
+- [넥스트유니콘: [펀드명]](URL)
 - [LinkedIn: [파트너명]](URL)
 - [최근 뉴스: [헤드라인]](URL)
 ```
@@ -396,13 +396,12 @@ LinkedIn 2촌: [X명]
 ### 5단계: ~~data enrichment 연결 시
 
 ```
-Crunchbase/PitchBook/Dealroom에서:
-1. 정확한 펀드 규모, AUM
-2. 전체 포트폴리오 (웹사이트 미공개 포함)
-3. 투자 이력 (일자, 금액, 라운드)
-4. 파트너별 투자 분야, 보드 참여
-5. LP 구성 (기관/개인)
-6. Exit 이력 (IPO, M&A)
+THE VC/혁신의숲/OpenDART에서 (웹 검색 기반, OpenDART는 MCP 연결 가능):
+1. 투자 라운드, 밸류에이션 이력 (THE VC)
+2. 포트폴리오 현황 및 투자 이력 (THE VC)
+3. 스타트업 트래픽·고용·매출 성장 지표 (혁신의숲)
+4. 상장사 재무제표, 지분구조 (OpenDART)
+5. Exit 이력 — 상장, M&A (OpenDART + 웹 검색)
 ```
 
 ### 6단계: 접근 경로 매핑

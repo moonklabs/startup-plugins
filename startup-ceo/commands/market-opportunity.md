@@ -486,8 +486,8 @@ TAM (Total Addressable Market), SAM (Serviceable Available Market), SOM (Service
 - 모순되는 데이터 플래그
 
 **~~data enrichment** 연결 시:
-- Crunchbase/PitchBook에서 경쟁사 매출 자동 수집
-- 시장 보고서 자동 구매 및 파싱 (유료 계정 필요)
+- THE VC/혁신의숲에서 경쟁사 투자 규모·성장 지표 수집 (웹 검색 기반)
+- OpenDART에서 상장 경쟁사 공시 재무 데이터 자동 수집 (MCP 연결 시)
 
 ### 3단계: 3가지 방법론 독립 실행 (15-20분)
 
@@ -539,10 +539,10 @@ results = parallel([
 
 | 도구 카테고리 | 플레이스홀더 | 용도 | 예시 도구 |
 |---------------|-------------|------|-----------|
-| 데이터 보강 | `~~data enrichment` | 경쟁사 매출, 시장 보고서 | Crunchbase, PitchBook, Dealroom |
+| 데이터 보강 | `~~data enrichment` | 경쟁사 투자·성장 지표, 공시 데이터 | THE VC, 혁신의숲, OpenDART |
 | 지식 베이스 | `~~knowledge base` | 내부 고객 ARPA 데이터 | Notion, Confluence |
 | 스프레드시트 | `~~spreadsheet` | 시나리오 모델링, 차트 | Google Sheets, Excel |
-| CRM | `~~CRM` | 실제 전환율 데이터 | HubSpot, Salesforce |
+| CRM | `~~CRM` | 실제 전환율 데이터 | Relate, HubSpot |
 
 ## 팁
 

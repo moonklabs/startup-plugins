@@ -623,12 +623,12 @@ financial_modeling_skill(revenue_model)  # 3-시나리오
 - 비즈니스 케이스 변경 → 소스 문서 업데이트 제안
 - 양방향 동기화 옵션
 
-### ~~data enrichment (Crunchbase, PitchBook)
+### ~~data enrichment (THE VC, 혁신의숲)
 
-**자동 데이터 수집**:
-- 경쟁사 펀딩 정보 → 섹션 5
-- 시장 규모 검증 → 섹션 2
-- 유사 Exit 사례 → 섹션 10
+**자동 데이터 수집** (웹 검색 기반):
+- THE VC: 경쟁사 투자 라운드, 밸류에이션 → 섹션 5
+- 혁신의숲: 경쟁사 성장 지표 검증 → 섹션 2
+- OpenDART: 상장 경쟁사 재무 공시, Exit 사례 → 섹션 10
 
 ### ~~spreadsheet (Google Sheets, Excel)
 

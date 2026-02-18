@@ -67,7 +67,7 @@ Tier 4: Alternatives (대체재)
 3. "best [카테고리] for [ICP]"
 4. "[문제] solutions"
 5. "[경쟁사 A] vs [경쟁사 B]" (비교 기사)
-6. "Crunchbase [카테고리] startups"
+6. "THE VC [카테고리] 스타트업"
 7. "[지역] [카테고리] companies"
 8. "G2 [카테고리] reviews"
 9. "[투자사명] portfolio [카테고리]"
@@ -539,9 +539,9 @@ Loss Reasons (Top 3):
 
 | 도구 카테고리 | 플레이스홀더 | 용도 | 예시 도구 |
 |---------------|-------------|------|-----------|
-| 데이터 보강 | `~~data enrichment` | 경쟁사 펀딩, 매출, 팀 규모 | Crunchbase, PitchBook |
+| 데이터 보강 | `~~data enrichment` | 경쟁사 투자 라운드, 성장 지표 | THE VC, 혁신의숲, OpenDART |
 | 지식 베이스 | `~~knowledge base` | Win/Loss 인터뷰 저장 | Notion, Confluence |
-| CRM | `~~CRM` | Deal별 경쟁사, 승률 추적 | HubSpot, Salesforce |
+| CRM | `~~CRM` | Deal별 경쟁사, 승률 추적 | Relate, HubSpot |
 | 영업 도구 | (~~knowledge base) | 배틀카드 배포 및 업데이트 | Klue, Crayon |
 
 ## 관련 스킬

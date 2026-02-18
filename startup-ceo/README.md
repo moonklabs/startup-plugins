@@ -97,7 +97,7 @@ claude plugins add startup-ceo
 /deal-sourcing fintech series A
 ```
 
-핀테크 Series A 투자자를 웹 검색으로 발굴하고, thesis 적합도를 평가(HIGH/MEDIUM/LOW)하며, 웜인트로 경로를 매핑합니다. ~~data enrichment (Crunchbase, PitchBook)가 연결되면 더욱 정확합니다.
+핀테크 Series A 투자자를 웹 검색으로 발굴하고, thesis 적합도를 평가(HIGH/MEDIUM/LOW)하며, 웜인트로 경로를 매핑합니다. THE VC, 혁신의숲을 함께 조회하면 더욱 정확합니다.
 
 ### 투자자 리드 현황 파악
 
@@ -146,7 +146,7 @@ TAM/SAM/SOM을 3가지 방법론(Top-down, Bottom-up, Value Theory)으로 교차
 | 가능한 작업 | 단독 사용 | 강화 연동 |
 |-------------|-----------|-----------|
 | 일일 브리핑 | 사용자가 파이프라인·미팅 입력 | ~~CRM, ~~calendar, ~~email (자동 수집) |
-| 딜소싱 | 웹 검색 | ~~data enrichment (Crunchbase, PitchBook, Dealroom) |
+| 딜소싱 | 웹 검색 | ~~data enrichment (THE VC, 혁신의숲, OpenDART) |
 | Lead 대시보드 | 사용자가 리드 리스트 입력 | ~~CRM (자동 파이프라인 데이터) |
 | 투자자 아웃리치 | 웹 검색 + 사용자 맥락 | ~~CRM, ~~email (이력, 자동 전송) |
 | 피치 리뷰 | 덱 파일 업로드 | ~~docs (Google Slides, Notion) |
@@ -162,8 +162,8 @@ TAM/SAM/SOM을 3가지 방법론(Top-down, Bottom-up, Value Theory)으로 교차
 
 | 카테고리 | 예시 | 활성화되는 기능 |
 |---|---|---|
-| **CRM / 투자자 관리** | HubSpot, Notion, Affinity | 투자자 파이프라인, 미팅 이력, 커뮤니케이션 기록 |
-| **데이터 보강** | Clay, ZoomInfo, Crunchbase, PitchBook | VC 펀드 데이터, 투자 이력, thesis, 포트폴리오 |
+| **CRM / 투자자 관리** | HubSpot, Notion (MCP 지원), Relate (한국 IR 특화, 수동 운영) | 투자자 파이프라인, 미팅 이력, 커뮤니케이션 기록 |
+| **데이터 보강** | THE VC, 혁신의숲, 넥스트유니콘 (웹 검색 기반), OpenDART (MCP 지원, 상장사) | VC 투자 이력, 포트폴리오, 스타트업 성장 지표 |
 | **이메일** | Microsoft 365, Gmail | 아웃리치 자동화, 후속 연락 추적 |
 | **캘린더** | Microsoft 365, Google Calendar | 투자자 미팅 일정, DD 세션 준비 |
 | **문서** | Notion, Google Docs/Slides | 피치 덱, 데이터룸, IR 자료 |

@@ -383,7 +383,7 @@ Secondary: Content-Led (30% 리소스)
 - [ ] **Analytics**:
   - Google Analytics 설정
   - UTM 파라미터 표준화
-  - CRM 통합 (HubSpot/Pipedrive)
+  - CRM 통합 (Relate/HubSpot)
 - [ ] **팀**:
   - Marketer 1명 채용 시작
   - Freelance Writer 계약
@@ -655,7 +655,7 @@ elif stage == "Series A":
 | 도구 카테고리 | 플레이스홀더 | 용도 | 예시 도구 |
 |---------------|-------------|------|-----------|
 | 분석 플랫폼 | `~~analytics` | 기존 채널 성과 분석 | Google Analytics, Mixpanel |
-| CRM | `~~CRM` | ICP별 Win Rate, CAC | HubSpot, Pipedrive |
+| CRM | `~~CRM` | ICP별 Win Rate, CAC | Relate, HubSpot |
 | 지식 베이스 | `~~knowledge base` | 기존 GTM 자료 참조 | Notion, Confluence |
 | 스프레드시트 | `~~spreadsheet` | 예산 모델링 | Google Sheets |
 

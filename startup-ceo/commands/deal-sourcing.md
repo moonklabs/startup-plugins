@@ -34,7 +34,7 @@ argument-hint: "<섹터, 단계, 또는 지역>"
 │  ✓ 우선순위 리스트: 적합도 HIGH → MEDIUM → LOW 정렬              │
 ├─────────────────────────────────────────────────────────────────┤
 │  강화 모드 (도구 연결 시)                                         │
-│  + ~~data enrichment: Crunchbase, PitchBook, Dealroom 데이터     │
+│  + ~~data enrichment: THE VC, 혁신의숲, OpenDART 데이터          │
 │  + ~~CRM: 기존 인트로 경로, 포트폴리오 연결고리 자동 매핑          │
 │  + ~~knowledge base: 팀 노션/문서에서 웜인트로 커넥션 검색         │
 └─────────────────────────────────────────────────────────────────┘
@@ -177,8 +177,8 @@ argument-hint: "<섹터, 단계, 또는 지역>"
 ---
 
 ## 출처
-- [Crunchbase: [섹터] investors](URL)
-- [PitchBook: [지역] VC firms](URL)
+- [THE VC: [섹터] 투자자](URL)
+- [혁신의숲: [지역] VC](URL)
 - [AngelList: [단계] syndicates](URL)
 - [웹 검색: [검색어]](URL)
 ```
@@ -283,12 +283,13 @@ argument-hint: "<섹터, 단계, 또는 지역>"
 
 ## ~~data enrichment 연결 시
 
-Crunchbase, PitchBook, Dealroom 연결 시:
-- 정확한 펀드 규모, AUM
-- 상세 포트폴리오 (전체 목록)
-- 투자 이력, 평균 체크사이즈
-- 파트너별 투자 분야
-- 펀드 조성 시기 (dry powder)
+THE VC, 혁신의숲, OpenDART 연결 시:
+- 정확한 펀드 규모, AUM (THE VC)
+- 상세 포트폴리오 및 투자 이력 (THE VC)
+- 스타트업 성장 지표 — 트래픽, 매출 추정 (혁신의숲)
+- 상장사 공시, 지분구조 (OpenDART)
+
+> THE VC, 혁신의숲은 공식 MCP 서버가 없어 웹 검색으로 접근합니다. OpenDART는 커뮤니티 MCP 서버를 통해 연결할 수 있습니다 (상장사 한정). 자세한 내용은 [CONNECTORS.md](../CONNECTORS.md)를 참조하세요.
 
 ---
 

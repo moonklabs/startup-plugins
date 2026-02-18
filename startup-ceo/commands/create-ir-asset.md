@@ -831,7 +831,7 @@ const scenarioChart = {
 
 ## CRM 연결 시
 
-**~~CRM** (HubSpot, Affinity, Attio 등) 연결 시 자동화:
+**~~CRM** (Relate, HubSpot, Notion 등) 연결 시 자동화:
 
 ### 자동 데이터 로드
 

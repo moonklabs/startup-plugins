@@ -5,7 +5,7 @@ description: VC, AC, 엔젤, CVC 등 투자자 소싱 방법론과 데이터 소
 
 # 딜소싱 (Deal Sourcing)
 
-신규 VC, AC, 엔젤, CVC 투자자를 체계적으로 발굴하고, thesis 적합도를 평가하며, 접근 경로를 매핑하는 방법론입니다. 이 스킬은 웹 검색만으로도 항상 작동하며, 데이터 보강 도구(Crunchbase, PitchBook, Dealroom)가 추가되면 크게 향상됩니다.
+신규 VC, AC, 엔젤, CVC 투자자를 체계적으로 발굴하고, thesis 적합도를 평가하며, 접근 경로를 매핑하는 방법론입니다. 이 스킬은 웹 검색만으로도 항상 작동하며, 데이터 보강 도구(THE VC, 혁신의숲, OpenDART)가 추가되면 크게 향상됩니다.
 
 ## 작동 방식
 
@@ -20,7 +20,7 @@ description: VC, AC, 엔젤, CVC 등 투자자 소싱 방법론과 데이터 소
 │  ✓ 접근 경로 매핑: 웜인트로/콜드/AC지원                           │
 ├─────────────────────────────────────────────────────────────────┤
 │  강화 모드 (도구 연결 시)                                         │
-│  + ~~data enrichment: Crunchbase, PitchBook, Dealroom 전문 데이터│
+│  + ~~data enrichment: THE VC, 혁신의숲, OpenDART 전문 데이터     │
 │  + ~~CRM: 기존 투자자 네트워크, 인트로 경로 자동 매핑              │
 │  + ~~knowledge base: 팀 문서에서 커넥션, 인트로 이력 검색          │
 └─────────────────────────────────────────────────────────────────┘
@@ -47,7 +47,7 @@ description: VC, AC, 엔젤, CVC 등 투자자 소싱 방법론과 데이터 소
 
 | 커넥터 | 추가 기능 |
 |--------|----------|
-| **데이터 보강** | Crunchbase, PitchBook, Dealroom — 정확한 펀드 데이터, 투자 이력, 포트폴리오, 파트너 정보 |
+| **데이터 보강** | THE VC (투자 라운드·포트폴리오), 혁신의숲 (성장 지표), OpenDART (상장사 공시) — 웹 검색 기반, OpenDART는 MCP 연결 가능 |
 | **CRM** | 기존 투자자 네트워크 분석, 인트로 경로 자동 매핑 |
 | **지식 베이스** | Notion, Google Drive — 팀의 인트로 이력, 커넥션 DB 검색 |
 
@@ -164,7 +164,7 @@ description: VC, AC, 엔젤, CVC 등 투자자 소싱 방법론과 데이터 소
    - 어드바이저, 멘토 네트워크
 
 2순위: 데이터베이스
-   - ~~data enrichment 연결 시: Crunchbase, PitchBook, Dealroom
+   - ~~data enrichment 연결 시: THE VC, 혁신의숲, OpenDART (웹 검색 기반)
    - 미연결 시: 웹 검색 (아래 10-query 패턴)
 
 3순위: 역추적 소싱 (Reverse Sourcing)
@@ -341,7 +341,7 @@ LOW (⭐):
 
 **소싱 방법:**
 - 포트폴리오 역추적 (가장 효과적)
-- Crunchbase, PitchBook 검색
+- THE VC, 혁신의숲 웹 검색
 - VC 협회 회원사 리스트
 - 웹 검색: "[섹터] [단계] VC"
 
@@ -360,7 +360,7 @@ LOW (⭐):
 
 **소싱 방법:**
 - "accelerator programs [섹터] [지역]"
-- F6S, AngelList, Crunchbase 프로그램 DB
+- F6S, AngelList, THE VC 프로그램 DB
 - YC, Techstars, 500 Global 등 Top-tier
 - 한국: SparkLabs, 블루포인트, 프라이머
 
@@ -399,7 +399,7 @@ LOW (⭐):
 
 **소싱 방법:**
 - "[모기업] corporate venture capital"
-- Crunchbase CVC 필터
+- THE VC CVC 필터
 - 산업별 주요 기업의 CVC 팀
 
 **접근 전략:**
@@ -437,8 +437,8 @@ LOW (⭐):
    - KVIC (한국벤처투자) — 정부 출자 펀드
 
 2. 데이터베이스
-   - thevc.kr — 한국 VC 데이터베이스
-   - Crunchbase — 한국 섹션
+   - thevc.kr — 한국 VC 투자 데이터베이스
+   - innoforest.co.kr — 스타트업 성장 지표
    - 벤처스퀘어 — 투자 통계
 
 3. 뉴스/미디어
@@ -495,7 +495,7 @@ LOW (⭐):
 ### 2단계: 투자자 발굴
 
 ```
-Crunchbase, PitchBook, 웹 검색:
+THE VC, 혁신의숲, 웹 검색:
 "[유사 스타트업] investors"
 "[유사 스타트업] series A"
 
@@ -526,7 +526,7 @@ Crunchbase, PitchBook, 웹 검색:
 
 ## ~~data enrichment 연결 시
 
-Crunchbase, PitchBook, Dealroom 연결 시 자동으로:
+THE VC, 혁신의숲, OpenDART 연결 시 자동으로 (웹 검색 기반, OpenDART는 MCP 가능):
 
 ```
 정확한 데이터:

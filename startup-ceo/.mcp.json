@@ -12,14 +12,6 @@
       "type": "http",
       "url": "https://mcp.notion.com/mcp"
     },
-    "clay": {
-      "type": "http",
-      "url": "https://api.clay.com/v3/mcp"
-    },
-    "zoominfo": {
-      "type": "http",
-      "url": "https://mcp.zoominfo.com/mcp"
-    },
     "ms365": {
       "type": "http",
       "url": "https://microsoft365.mcp.claude.com/mcp"

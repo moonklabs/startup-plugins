@@ -449,8 +449,8 @@ SOM: $25M (5년 후 5% 점유율)
 |---------------|-------------|------|-----------|
 | 지식 베이스 | `~~knowledge base` | 내부 고객 데이터로 ARPA 검증 | Notion, Confluence |
 | 스프레드시트 | `~~spreadsheet` | 시나리오별 시장 규모 모델링 | Google Sheets, Excel |
-| 데이터 보강 | `~~data enrichment` | 경쟁사 매출 데이터 수집 | Crunchbase, PitchBook |
-| CRM | `~~CRM` | 실제 전환율 데이터 추출 | HubSpot, Salesforce |
+| 데이터 보강 | `~~data enrichment` | 경쟁사 투자·성장 지표 수집 | THE VC, 혁신의숲, OpenDART |
+| CRM | `~~CRM` | 실제 전환율 데이터 추출 | Relate, HubSpot |
 
 ---
 
