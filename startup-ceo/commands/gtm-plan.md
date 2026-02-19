@@ -677,6 +677,39 @@ elif stage == "Series A":
 - **sales-playbook**: Sales-Led 프로세스 상세
 - **competitive-landscape**: 경쟁사 GTM 분석
 
+## 에이전트 병렬 실행
+
+이 커맨드는 실행 시 다음 에이전트를 병렬로 호출합니다:
+
+| 에이전트 | 역할 | 담당 섹션 |
+|---------|------|----------|
+| `market-researcher` | 타겟 시장 규모 + ICP 세그먼트 검증 | 섹션 1 (Executive Summary 시장) |
+| `competitor-analyst` | 경쟁사 GTM 모션 분석 + 배틀카드 | 섹션 2 (GTM 모션), 부록 D |
+
+**실행 구조:**
+
+```
+[/gtm-plan "B2B SaaS CRM"] 실행
+         │
+━━ Level 0: 병렬 실행 ━━━━━━━━━━━━━━━━━━━━━
+         ├── market-researcher  ─── 시장 규모 + ICP 검증 데이터
+         └── competitor-analyst ─── 경쟁사 GTM 분석 + 배틀카드
+━━ Level 1: 통합 ━━━━━━━━━━━━━━━━━━━━━━━━━
+         └── GTM 전략 문서 (ICP → 채널 → 90일 계획)
+```
+
+**활용 시나리오:**
+
+```bash
+# 시리즈 A 투자자용 GTM 슬라이드 준비
+/gtm-plan "B2B SaaS 중소기업 회계"
+# → market-researcher: 시장 규모 + ARPA 벤치마크
+# → competitor-analyst: 주요 경쟁사 GTM 차별화 포인트
+# → 투자자 설득력 있는 GTM 내러티브 자동 생성
+```
+
+---
+
 ## 관련 커맨드
 
 - **/business-case**: GTM 계획을 비즈니스 케이스에 통합

@@ -32,13 +32,33 @@ startup-plugins/
     │   └── plugin.json           # 플러그인 메타데이터 (name, version, author)
     ├── .mcp.json                 # MCP 서버 사전 구성 (Slack, HubSpot, Notion, Clay 등)
     ├── commands/                 # 슬래시 커맨드 (각 파일 = 하나의 /커맨드)
-    └── skills/                   # 도메인 지식 스킬 (각 디렉토리 = 하나의 스킬)
-        └── [skill-name]/
-            ├── SKILL.md          # 스킬 본문
-            └── references/       # (선택) 보조 참조 문서
+    ├── skills/                   # 도메인 지식 스킬 (각 디렉토리 = 하나의 스킬)
+    │   └── [skill-name]/
+    │       ├── SKILL.md          # 스킬 본문
+    │       └── references/       # (선택) 보조 참조 문서
+    └── agents/                   # 병렬 실행 가능한 서브에이전트
+        └── [agent-name].md       # 에이전트 시스템 프롬프트
 ```
 
 **핵심 규칙**: `.claude-plugin/` 디렉토리에는 `plugin.json`과 `marketplace.json` 매니페스트 파일만 위치합니다. commands, skills 등 모든 컴포넌트는 플러그인 루트에 있어야 합니다.
+
+## 에이전트 파일 형식 (`agents/*.md`)
+
+```markdown
+---
+name: agent-name
+description: 자동 트리거될 상황 설명 및 키워드 (자연어로 기술)
+tools: WebSearch, Read, Write
+model: sonnet
+---
+
+[에이전트 시스템 프롬프트]
+```
+
+- 파일명 = 에이전트명 (`investor-researcher.md` → `investor-researcher` 에이전트)
+- `tools` 필드: 에이전트가 사용할 도구 목록 (쉼표 구분)
+- `model` 필드: `sonnet` 또는 `haiku` (복잡한 분석은 `sonnet` 권장)
+- 에이전트는 커맨드 실행 중 병렬로 호출되어 독립적인 서브태스크를 처리합니다
 
 ## 커맨드 파일 형식 (`commands/*.md`)
 

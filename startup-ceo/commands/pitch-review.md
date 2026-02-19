@@ -607,6 +607,42 @@ argument-hint: "<피치 덱 파일 경로 또는 '현재 덱'>"
 
 ---
 
+## 에이전트 병렬 실행
+
+이 커맨드는 실행 시 다음 에이전트를 병렬로 호출합니다:
+
+| 에이전트 | 역할 | 담당 슬라이드 |
+|---------|------|-------------|
+| `market-researcher` | TAM/SAM/SOM 근거 검증 + 성장률 데이터 수집 | Slide 4 (Market Opportunity) |
+| `competitor-analyst` | 경쟁사 심층 분석 + 포지셔닝 매트릭스 데이터 | Slide 8 (Competition) |
+| `financial-modeler` | 재무 가정 검증 + 시나리오 일관성 점검 | Slide 11-12 (Financials/Ask) |
+| `vc-question-prepper` | 이 피치 덱 기반 예상 질문 30개 생성 | 미팅 준비 자료 |
+
+**실행 구조:**
+
+```
+[/pitch-review "pitch-v3.pdf"] 실행
+         │
+━━ Level 0: 병렬 분석 ━━━━━━━━━━━━━━━━━━━━━
+         ├── market-researcher   ─── TAM 계산 근거 검증
+         ├── competitor-analyst  ─── 경쟁 슬라이드 데이터 검증
+         └── financial-modeler   ─── 재무 가정 일관성 점검
+━━ Level 1: 통합 ━━━━━━━━━━━━━━━━━━━━━━━━━
+         ├── 100점 평가 + 슬라이드별 G/Y/R
+         └── vc-question-prepper ─── 피치 내용 기반 예상 질문 30개
+```
+
+**활용 시나리오:**
+
+```bash
+# 특정 VC 맞춤 리뷰
+/pitch-review "Sequoia 미팅용 덱"
+# → investor-researcher가 Sequoia thesis 파악
+# → vc-question-prepper가 Sequoia 스타일 예상 질문 생성
+```
+
+---
+
 ## 관련 커맨드
 
 - `/pitch-craft` 스킬 — 피치 덱 작성 가이드

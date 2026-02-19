@@ -565,6 +565,46 @@ results = parallel([
 - **financial-modeling**: 시장 규모 → 매출 예측 변환
 - **startup-metrics**: SOM 달성에 필요한 지표 역산
 
+## 에이전트 병렬 실행
+
+이 커맨드는 실행 시 다음 에이전트를 병렬로 호출합니다:
+
+| 에이전트 | 역할 | 출력 |
+|---------|------|------|
+| `market-researcher` | 10-15쿼리 리서치 → Top-down/Bottom-up/Value Theory 3방법론 동시 실행 | TAM/SAM/SOM 교차검증 보고서 |
+| `competitor-analyst` | 경쟁사 점유율 분석으로 SOM 역산 검증 | 경쟁 환경 + 포지셔닝 데이터 |
+
+**실행 구조:**
+
+```
+[/market-opportunity "B2B SaaS CRM"] 실행
+         │
+━━ Level 0: 병렬 실행 ━━━━━━━━━━━━━━━━━━━━━
+         ├── market-researcher
+         │     ├── Top-down    ─── 글로벌 리포트 기반
+         │     ├── Bottom-up   ─── 고객 수 × ARPU 기반    } 3방법론 동시
+         │     └── Value Theory ── 절감 가치 기반         }
+         │           ↓ 교차검증 + 보수적 최종 추정
+         └── competitor-analyst ── 경쟁사 점유율 → SOM 검증
+━━ Level 1: 통합 ━━━━━━━━━━━━━━━━━━━━━━━━━
+         └── 투자자용 시장 기회 슬라이드 + 상세 계산 문서
+```
+
+**단독 vs 병렬 비교:**
+
+```bash
+# 단독 (기본)
+/market-opportunity "한국 B2B SaaS"
+# → market-researcher 단독 실행
+
+# 경쟁 분석 포함
+/market-opportunity "한국 B2B SaaS" --with-competition
+# → market-researcher + competitor-analyst 병렬 실행
+# → SOM을 경쟁사 점유율 데이터로 교차검증
+```
+
+---
+
 ## 관련 커맨드
 
 - **/business-case**: 시장 기회를 10섹션 비즈니스 케이스에 통합

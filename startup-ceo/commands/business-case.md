@@ -651,6 +651,35 @@ financial_modeling_skill(revenue_model)  # 3-시나리오
 - **정기 업데이트**: 분기별 수정 (트랙션, 재무 실적 반영)
 - **공동 작업**: 창업팀 전체가 리뷰, 일관된 메시지 확인
 
+## 에이전트 병렬 실행
+
+이 커맨드는 실행 시 다음 에이전트를 병렬로 호출합니다:
+
+| 에이전트 | 역할 | 담당 섹션 |
+|---------|------|----------|
+| `market-researcher` | TAM/SAM/SOM 3방법론 교차검증 | 섹션 2 (시장 기회) |
+| `competitor-analyst` | Porter's 5 Forces + 포지셔닝 매트릭스 + 배틀카드 | 섹션 5 (경쟁 환경) |
+| `financial-modeler` | Base/Bull/Bear 3-시나리오 + Unit Economics | 섹션 6 (재무 전망) |
+
+**실행 구조:**
+
+```
+[/business-case "MyStartup"] 실행
+         │
+━━ Level 0: 완전 병렬 ━━━━━━━━━━━━━━━━━━━━━━
+         ├── market-researcher   ─── 10-15쿼리 → TAM/SAM/SOM 교차검증
+         ├── competitor-analyst  ─── 경쟁사 분석 → 포지셔닝 매트릭스
+         └── financial-modeler   ─── 3시나리오 → Unit Economics
+━━ Level 1: 통합 ━━━━━━━━━━━━━━━━━━━━━━━━━━━
+         └── 10개 섹션 비즈니스 케이스 문서 통합 생성
+```
+
+**병렬 실행 효과:**
+- 3개 에이전트 동시 실행으로 작성 시간 대폭 단축
+- 시장 규모 ↔ 재무 전망 ↔ 경쟁 포지션 간 수치 일관성 자동 검증
+
+---
+
 ## 관련 스킬
 
 - **market-sizing**: 섹션 2 시장 기회 분석

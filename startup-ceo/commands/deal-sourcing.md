@@ -293,6 +293,41 @@ THE VC, 혁신의숲, OpenDART 연결 시:
 
 ---
 
+## 에이전트 병렬 실행
+
+이 커맨드는 실행 시 다음 에이전트를 호출합니다:
+
+| 에이전트 | 역할 | 출력 |
+|---------|------|------|
+| `investor-researcher` | 발굴된 투자자별 심층 리서치 + Thesis 매칭 | 투자자 프로필 + GREEN/YELLOW/RED 판정 |
+
+**실행 구조:**
+
+```
+[/deal-sourcing "B2B SaaS seed Korea"] 실행
+         │
+ Step 1: 웹 검색 10쿼리 → 투자자 후보 리스트 생성
+         │
+ Step 2: investor-researcher × N 병렬 실행
+         ├── 투자자A 리서치 ─── Thesis 매칭 → GREEN
+         ├── 투자자B 리서치 ─── Thesis 매칭 → YELLOW
+         └── 투자자C 리서치 ─── Thesis 매칭 → RED
+         │
+ Step 3: GREEN → YELLOW → RED 순 우선순위 리스트 출력
+```
+
+**딜소싱 → 아웃리치 연결:**
+
+```bash
+# 딜소싱으로 발굴 후 바로 아웃리치
+/deal-sourcing "SaaS Series A"
+# GREEN 판정 투자자 확인 후:
+/investor-outreach "[GREEN 판정 VC명]"
+# → investor-researcher 재활용 + investor-email-writer 이메일 생성
+```
+
+---
+
 ## 팁
 
 1. **매일 딜소싱** — 커버리지 3x 유지를 위해 지속적인 신규 발굴 필요

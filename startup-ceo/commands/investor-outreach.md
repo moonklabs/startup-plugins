@@ -512,6 +512,39 @@ Day 21: "최종 팔로업" 알림
 
 ---
 
+## 에이전트 병렬 실행
+
+이 커맨드는 실행 시 다음 에이전트를 병렬로 호출합니다:
+
+| 에이전트 | 역할 | 출력 |
+|---------|------|------|
+| `investor-researcher` | 투자자별 7-10쿼리 리서치 + Thesis 매칭 (GREEN/YELLOW/RED) | 투자자 프로필, 접근경로 |
+| `investor-email-writer` | 아웃리치 시나리오 식별 + 맞춤형 이메일 초안 + Day 5/10/21 팔로업 | 이메일 초안 세트 |
+| `vc-question-prepper` | (선택) 미팅 성사 후 예상 질문 30개 + 답변 전략 | Q&A 준비 자료 |
+
+**실행 구조:**
+
+```
+[/investor-outreach "VC명"] 실행
+         │
+         ├── investor-researcher ─── 7-10쿼리 리서치 → 프로필 + Thesis 매칭
+         │         ↓ GREEN/YELLOW/RED 판정
+         └── investor-email-writer ─ 시나리오 식별 → 이메일 초안 + 팔로업 시퀀스
+
+투자자 N명인 경우:
+investor-researcher × N  ←  병렬 동시 리서치
+```
+
+**투자자 여러 명 배치 실행:**
+
+```bash
+/investor-outreach "프라이머, 블루포인트, 스파크랩스"
+# → investor-researcher가 3개 펀드를 동시에 병렬 리서치
+# → GREEN 판정 펀드에 investor-email-writer가 맞춤 이메일 생성
+```
+
+---
+
 ## 관련 커맨드
 
 - `/deal-sourcing` — 새 투자자 타겟 발굴
