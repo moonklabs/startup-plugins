@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 레포지토리 개요
 
-이 레포지토리는 Claude Code 플러그인 마켓플레이스 모음입니다. 현재 `startup-ceo` 플러그인이 포함되어 있으며, 스타트업 창업자의 VC/AC 투자 유치 일일 루틴을 지원합니다.
+이 레포지토리는 Claude Code 플러그인 마켓플레이스 모음입니다. 현재 `startup-fundraise` 플러그인이 포함되어 있으며, 스타트업 창업자의 VC/AC 투자 유치 일일 루틴을 지원합니다.
 
 ## 플러그인 설치 및 테스트
 
@@ -13,10 +13,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 /plugin marketplace add /workspace/startup-plugins
 
 # 플러그인 설치
-/plugin install startup-ceo@startup-plugins
+/plugin install startup-fundraise@startup-plugins
 
 # 플러그인 제거 (변경 후 재설치)
-/plugin uninstall startup-ceo@startup-plugins
+/plugin uninstall startup-fundraise@startup-plugins
 ```
 
 > 설치 또는 제거 후 반드시 Claude Code를 재시작해야 변경사항이 적용됩니다.
@@ -27,7 +27,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 startup-plugins/
 ├── .claude-plugin/
 │   └── marketplace.json          # 마켓플레이스 정의 (이 레포가 제공하는 플러그인 목록)
-└── startup-ceo/                  # 플러그인 루트
+└── startup-fundraise/                  # 플러그인 루트
     ├── .claude-plugin/
     │   └── plugin.json           # 플러그인 메타데이터 (name, version, author)
     ├── .mcp.json                 # MCP 서버 사전 구성 (Slack, HubSpot, Notion, Clay 등)
@@ -112,7 +112,7 @@ description: 자동 트리거될 상황 설명 및 키워드 (자연어로 기�
 
 ## 새 플러그인 추가 방법
 
-1. `startup-ceo/`를 참고하여 새 디렉토리 생성
+1. `startup-fundraise/`를 참고하여 새 디렉토리 생성
 2. `.claude-plugin/plugin.json` 작성 (name, version, description, author)
 3. `commands/` 및 `skills/` 추가
 4. `.claude-plugin/marketplace.json`에 새 플러그인 항목 추가:
@@ -120,7 +120,7 @@ description: 자동 트리거될 상황 설명 및 키워드 (자연어로 기�
 ```json
 {
   "plugins": [
-    { "name": "startup-ceo", "source": "./startup-ceo" },
+    { "name": "startup-fundraise", "source": "./startup-fundraise" },
     { "name": "new-plugin",  "source": "./new-plugin" }
   ]
 }
@@ -145,4 +145,4 @@ git push origin main
 git push origin v1.0.0
 ```
 
-`startup-ceo/.claude-plugin/plugin.json`의 `version` 필드를 semantic versioning으로 관리합니다.
+`startup-fundraise/.claude-plugin/plugin.json`의 `version` 필드를 semantic versioning으로 관리합니다.

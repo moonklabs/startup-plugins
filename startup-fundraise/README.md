@@ -1,4 +1,4 @@
-# Startup CEO 플러그인
+# Startup Fundraise 플러그인
 
 Anthropic의 에이전트 데스크톱 애플리케이션인 [Cowork](https://claude.com/product/cowork)을 위해 설계된 스타트업 창업자 생산성 플러그인이며, Claude Code에서도 사용할 수 있습니다. VC/AC 투자 유치의 일일 루틴을 실행하고, 시장 분석, 재무 모델링, GTM 전략, 가격 전략, 경쟁 분석, 세일즈를 아우르는 종합 Startup OS 플러그인입니다.
 
@@ -7,7 +7,7 @@ Anthropic의 에이전트 데스크톱 애플리케이션인 [Cowork](https://cl
 ## 설치
 
 ```bash
-claude plugins add startup-ceo
+claude plugins add startup-fundraise
 ```
 
 ## 커맨드
