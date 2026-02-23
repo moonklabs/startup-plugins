@@ -11,6 +11,12 @@
     "ms365": {
       "type": "http",
       "url": "https://microsoft365.mcp.claude.com/mcp"
+    },
+    "hwp-generator": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["${__dirname}/hwp_server/server.py"],
+      "env": {}
     }
   }
 }
